@@ -432,3 +432,128 @@ h1, h2, h3 {
     border-radius: 16px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
+
+.section-divider {
+    width: 100%;
+    height: 190px;
+    background-image: url('../media/about.jpg'); /* check path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section-divider::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(43, 26, 18, 0.78),
+        rgba(140, 63, 82, 0.65)
+    );
+}
+
+.section-divider h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* -----------------------------------------
+   CONTACT SECTION (Form + Map)
+----------------------------------------- */
+.contact-section {
+    padding: 80px 0;
+    background-color: var(--hazelnut-cream);
+}
+
+.contact-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-form-container,
+.contact-map {
+    flex: 1;
+}
+
+.contact-section .section-title {
+    margin-bottom: 25px;
+}
+
+.contact-form-container p {
+    margin-bottom: 16px;
+    color: var(--roasted-espresso);
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--dark-cocoa);
+}
+
+input,
+textarea {
+    padding: 11px 12px;
+    border: 1px solid rgba(93, 64, 55, 0.18);
+    border-radius: 8px;
+    font-family: inherit;
+    background-color: #fff;
+    transition: border 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--caramel-drizzle);
+    box-shadow: 0 0 0 3px rgba(197, 123, 87, 0.18);
+    background-color: #fffdf9;
+}
+
+.submit-btn {
+    background: var(--dark-cocoa);
+    color: var(--text-light);
+    padding: 11px 20px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.92rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+    transition: background 0.2s ease, transform 0.18s ease, box-shadow 0.22s ease;
+}
+
+.submit-btn:hover {
+    background: var(--mocha-blend);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.26);
+}
