@@ -365,7 +365,7 @@ h1, h2, h3 {
 .discount-banner {
     position: relative;
     height: 220px;
-    background-image: url('../media/aboutdivider.jpg'); /* check path */
+    background-image: url('../media/aboutdivider.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -436,7 +436,7 @@ h1, h2, h3 {
 .section-divider {
     width: 100%;
     height: 190px;
-    background-image: url('../media/about.jpg'); /* check path */
+    background-image: url('../media/about.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -470,9 +470,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-/* -----------------------------------------
-   CONTACT SECTION (Form + Map)
------------------------------------------ */
+
 .contact-section {
     padding: 80px 0;
     background-color: var(--hazelnut-cream);
@@ -556,4 +554,31 @@ textarea:focus {
     background: var(--mocha-blend);
     transform: translateY(-1px);
     box-shadow: 0 6px 18px rgba(0,0,0,0.26);
+}
+
+.site-footer {
+    background: var(--roasted-espresso);
+    color: var(--text-light);
+    padding: 70px 0 40px;
+    border-top: 4px solid var(--gold-soft);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--gold-soft);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
 }
