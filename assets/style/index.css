@@ -1,40 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Slabo 27px", serif;
-    line-height: 1.6;
-    background-color: #faf7f2;
-    color: #3a2c25;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-section {
-    padding: 80px 0;
-}
-
-h1, h2, h3 {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    color: #c7ad96; 
-}
-
-
-.section-title {
-    text-align: center;
-    font-size: 36px;
-    margin-bottom: 40px;
+:root {
+    
+    --roasted-espresso: #2B1A12;
+    --dark-cocoa: #3E2723;
+    --mocha-blend: #5D4037;
+    --caramel-drizzle: #C57B57;
+    --brown-sugar: #A97458;
+    --hazelnut-cream: #F5E9DD;
+    --vanilla-foam: #FFF6EE;
+    --mocha-mist: #EBDCCF;
+    --gold-rich: #D6A461;
+    --gold-soft: #E8C9A1;
+    --berry-compote: #8A3F52;
+    --text-dark: #2B1A12;
+    --text-light: #FAF9F6;
+    --background-light: #FFF8F3;
+    --matcha-light: #E8F3D8;  
+    --matcha-cream: #F4FAEC;  
+    --matcha-rich: #A8C97F;   
+    --matcha-deep: #7CA152;   
 }
