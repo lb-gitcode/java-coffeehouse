@@ -654,6 +654,7 @@ textarea:focus {
 
 #login-modal {
     visibility: hidden;
+    transition: all 0.2s ease-in-out;
 }
 
 .login-modal-overlay {
