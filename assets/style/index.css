@@ -75,3 +75,29 @@ h1, h2, h3 {
         transform: translateY(0);
     }
 }
+
+.hero-content h1,
+.hero-content p,
+.hero-btn {
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards;
+}
+
+.hero-content h1 {
+    animation-delay: 0.1s;
+}
+
+.hero-content p {
+    animation-delay: 0.25s;
+}
+
+.hero-btn {
+    animation-delay: 0.4s;
+}
+
+/* Section title animation */
+.section-title {
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards;
+    animation-delay: 0.15s;
+}
