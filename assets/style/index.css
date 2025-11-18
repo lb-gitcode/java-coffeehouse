@@ -95,7 +95,7 @@ h1, h2, h3 {
     animation-delay: 0.4s;
 }
 
-/* Section title animation */
+
 .section-title {
     opacity: 0;
     animation: fadeUp 0.9s ease forwards;
@@ -126,7 +126,7 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
-/* Logo */
+
 .logo {
     display: flex;
     align-items: center;
@@ -147,4 +147,64 @@ h1, h2, h3 {
 .logo-img:hover {
     transform: scale(1.06);
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+    align-items: center;
+}
+
+.main-nav a {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--roasted-espresso);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    position: relative;
+    padding-bottom: 3px;
+    transition: color 0.25s ease;
+}
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--caramel-drizzle);
+    transition: width 0.25s ease;
+}
+
+.main-nav a:hover {
+    color: var(--caramel-drizzle);
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+
+.login-btn {
+    background: var(--caramel-drizzle);
+    color: var(--text-light);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.login-btn:hover {
+    background: var(--brown-sugar);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 16px rgba(0,0,0,0.18);
 }
