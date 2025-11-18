@@ -651,3 +651,28 @@ textarea:focus {
     font-weight: 600;
     text-align: center;
 }
+
+.login-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.login-modal {
+    background: var(--vanilla-foam);
+    padding: 30px;
+    width: min(400px, 90%);
+    border-radius: 16px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    border: 1px solid rgba(232, 201, 161, 0.6);
+}
+
+.login-modal h2 {
+    margin-bottom: 18px;
+    color: var(--dark-cocoa);
+}
