@@ -11,9 +11,6 @@ const loginSubmit = getElement('login-submit');
 const loginEmail = getElement('login-email');
 const loginPassword = getElement('login-password');
 
-
-let poppedUp = false;
-
 function checkText(text) {
   if(text === '') {
     return false;
