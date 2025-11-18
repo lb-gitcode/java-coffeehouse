@@ -582,3 +582,27 @@ textarea:focus {
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
+
+.footer-links,
+.footer-socials {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-socials li {
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-socials a {
+    color: var(--hazelnut-cream);
+    font-size: 0.95rem;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    opacity: 0.75;
+    color: var(--gold-rich);
+}
