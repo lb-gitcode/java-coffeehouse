@@ -31,7 +31,7 @@
               <li><a href="#coffee-section">Menu</a></li>
               <li><a href="#about-section">About</a></li>
               <li><a href="#contact-section">Contact</a></li>
-              <li><button class="login-btn">Login</button></li>
+              <li><button class="login-btn" id="login-btn">Login</button></li>
             </ul>
           </nav>
         </div>
@@ -170,7 +170,7 @@
         <img src="./assets/media/pastry-macarons.jpg" alt="Macarons Box">
         <h3>Macaron Box</h3>
         <p class="price">$9.00</p>
-        <a href="detail.html" class="details-btn">View Details</a>
+        <a href="details.html" class="details-btn">View Details</a>
     </article>
 
     
@@ -178,7 +178,7 @@
         <img src="./assets/media/pastry-brownie.jpg" alt="Brownie">
         <h3>Brownie</h3>
         <p class="price">$3.75</p>
-        <a href="detail.html" class="details-btn">View Details</a>
+        <a href="details.html" class="details-btn">View Details</a>
     </article>
 
     
@@ -373,19 +373,11 @@
 </footer>
 
     
-<div class="login-modal-overlay" id="login-modal">
-    
+<div class="login-modal-overlay" id="login-modal"> 
     <div class="login-modal">
-
-        
         <button class="close-modal" id="close-login">&times;</button>
-
-        
         <h2>Login</h2>
-
         <form class="login-form">
-
-            
             <div class="form-group">
                 <label for="login-email">Email</label>
                 <input 
@@ -395,8 +387,6 @@
                     placeholder="you@example.com"
                     required>
             </div>
-
-            
             <div class="form-group">
                 <label for="login-password">Password</label>
                 <input 
@@ -406,15 +396,9 @@
                     placeholder="Enter your password"
                     required>
             </div>
-
-            
-            <button type="submit" class="login-submit">Login</button>
-
-        </form>
-
-    </div>
-
-</div>
-
-</body>
+            <button type="submit" class="login-submit" id="login-submit">Login</button>
+            </form>
+            </div>
+        </div>
+    </body>
 </html>
