@@ -606,3 +606,48 @@ textarea:focus {
     opacity: 0.75;
     color: var(--gold-rich);
 }
+
+.footer-column p {
+    margin-bottom: 6px;
+    color: var(--hazelnut-cream);
+    font-size: 0.95rem;
+}
+
+
+.footer-copy {
+    text-align: center;
+    margin-top: 35px;
+    color: var(--hazelnut-cream);
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+.footer-divider {
+    height: 180px;
+    background-image: url('../media/pastryBanner.jpg'); 
+    background-position: center;
+    border-radius: 10px;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.footer-divider::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+
+.footer-divider h2 {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-align: center;
+}
