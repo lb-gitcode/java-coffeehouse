@@ -714,3 +714,56 @@ textarea:focus {
 .login-modal-overlay.active {
     display: flex;
 }
+
+@media (max-width: 900px) {
+    .about-container,
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    .hero-section {
+        height: 80vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .header-container {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .main-nav ul {
+        gap: 18px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .discount-banner {
+        height: 200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .products-grid {
+        gap: 24px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
