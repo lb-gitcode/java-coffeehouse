@@ -5,7 +5,6 @@
 }
 
 :root {
-    
     --roasted-espresso: #2B1A12;
     --dark-cocoa: #3E2723;
     --mocha-blend: #5D4037;
@@ -95,7 +94,6 @@ h1, h2, h3 {
     animation-delay: 0.4s;
 }
 
-
 .section-title {
     opacity: 0;
     animation: fadeUp 0.9s ease forwards;
@@ -125,7 +123,6 @@ h1, h2, h3 {
     align-items: center;
     justify-content: space-between;
 }
-
 
 .logo {
     display: flex;
@@ -186,29 +183,6 @@ h1, h2, h3 {
     width: 100%;
 }
 
-
-.login-btn {
-    background: var(--caramel-drizzle);
-    color: var(--text-light);
-    padding: 8px 16px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-    transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
-}
-
-.login-btn:hover {
-    background: var(--brown-sugar);
-    transform: translateY(-1px);
-    box-shadow: 0 5px 16px rgba(0,0,0,0.18);
-}
-
 .hero-section {
     position: relative;
     height: 90vh;
@@ -222,7 +196,6 @@ h1, h2, h3 {
     background-repeat: no-repeat;
 }
 
-
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -232,7 +205,6 @@ h1, h2, h3 {
         rgba(43, 26, 18, 0.65)
     );
 }
-
 
 .hero-content {
     position: relative;
@@ -256,28 +228,6 @@ h1, h2, h3 {
     color: #fdf5ea;
 }
 
-
-.hero-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--caramel-drizzle);
-    color: #fff;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-    transition: background 0.24s ease, transform 0.18s ease, box-shadow 0.24s ease;
-}
-
-.hero-btn:hover {
-    background-color: var(--brown-sugar);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
-
 .products-section {
     padding: 80px 0;
     background-color: var(--background-light);
@@ -292,7 +242,6 @@ h1, h2, h3 {
     color: var(--mocha-blend);
 }
 
-
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -301,7 +250,6 @@ h1, h2, h3 {
     width: 90%;
     margin: 0 auto;
 }
-
 
 .product-card {
     background: #fff;
@@ -318,7 +266,6 @@ h1, h2, h3 {
     border-color: rgba(214, 164, 97, 0.35);
 }
 
-
 .product-card img {
     width: 100%;
     height: 220px;
@@ -326,13 +273,11 @@ h1, h2, h3 {
     border-radius: 14px;
 }
 
-
 .product-card h3 {
     margin-top: 15px;
     font-size: 1.25rem;
     color: var(--dark-cocoa);
 }
-
 
 .price {
     font-size: 1.05rem;
@@ -340,31 +285,61 @@ h1, h2, h3 {
     margin: 8px 0 15px;
     color: var(--caramel-drizzle);
 }
+
 .details-btn,
-.add-to-cart-btn {
-    margin: 5px;
-    width: 140px;
-    display: inline-block;
-    padding: 10px 0px;
-    background-color: var(--gold-rich); /* same as details button */
-    color: var(--text-dark);
-    text-decoration: none;
-    border-radius: 999px;
+.add-to-cart-btn,
+.hero-btn,
+.login-btn,
+.submit-btn,
+.login-submit {
+    font-family: inherit;
     font-size: 0.9rem;
     font-weight: 600;
-    text-transform: uppercase;
     letter-spacing: 0.07em;
-    transition: background 0.2s ease, transform 0.16s ease, box-shadow 0.2s ease;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-    border: none; /* if it’s a button element */
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: 10px 25px;
     cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: background 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.22);
 }
 
 .details-btn:hover,
-.add-to-cart-btn:hover {
-    background-color: var(--gold-soft);
+.add-to-cart-btn:hover,
+.hero-btn:hover,
+.login-btn:hover,
+.submit-btn:hover,
+.login-submit:hover {
     transform: translateY(-1px);
-    box-shadow: 0 5px 16px rgba(0,0,0,0.18);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.hero-btn,
+.login-btn,
+.login-submit {
+    background-color: var(--caramel-drizzle);
+    color: var(--text-light);
+}
+
+.details-btn,
+.add-to-cart-btn,
+.submit-btn {
+    background-color: var(--gold-rich);
+    color: var(--text-dark);
+}
+
+.hero-btn:hover,
+.login-btn:hover,
+.login-submit:hover {
+    background-color: var(--brown-sugar);
+}
+
+.details-btn:hover,
+.add-to-cart-btn:hover,
+.submit-btn:hover {
+    background-color: var(--gold-soft);
 }
 
 .discount-banner {
@@ -475,7 +450,6 @@ h1, h2, h3 {
     text-align: center;
 }
 
-
 .contact-section {
     padding: 80px 0;
     background-color: var(--hazelnut-cream);
@@ -540,123 +514,6 @@ textarea:focus {
     background-color: #fffdf9;
 }
 
-.submit-btn {
-    background: var(--dark-cocoa);
-    color: var(--text-light);
-    padding: 11px 20px;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.92rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-    transition: background 0.2s ease, transform 0.18s ease, box-shadow 0.22s ease;
-}
-
-.submit-btn:hover {
-    background: var(--mocha-blend);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.26);
-}
-
-.site-footer {
-    background: var(--roasted-espresso);
-    color: var(--text-light);
-    padding: 70px 0 40px;
-    border-top: 4px solid var(--gold-soft);
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.footer-column {
-    flex: 1;
-    min-width: 220px;
-}
-
-.footer-column h3 {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
-    color: var(--gold-soft);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-
-.footer-links,
-.footer-socials {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li,
-.footer-socials li {
-    margin-bottom: 8px;
-}
-
-.footer-links a,
-.footer-socials a {
-    color: var(--hazelnut-cream);
-    font-size: 0.95rem;
-    transition: opacity 0.2s ease, color 0.2s ease;
-}
-
-.footer-links a:hover,
-.footer-socials a:hover {
-    opacity: 0.75;
-    color: var(--gold-rich);
-}
-
-.footer-column p {
-    margin-bottom: 6px;
-    color: var(--hazelnut-cream);
-    font-size: 0.95rem;
-}
-
-
-.footer-copy {
-    text-align: center;
-    margin-top: 35px;
-    color: var(--hazelnut-cream);
-    font-size: 0.85rem;
-    opacity: 0.8;
-}
-
-
-.footer-divider {
-    height: 180px;
-    background-image: url('../media/pastryBanner.jpg'); 
-    background-position: center;
-    border-radius: 10px;
-    width: 100%;
-    margin: 60px auto 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-
-
-.footer-divider::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-}
-
-
-.footer-divider h2 {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    font-size: 1.9rem;
-    letter-spacing: 0.5px;
-    font-weight: 600;
-    text-align: center;
-}
-
 .login-modal-overlay {
     position: fixed;
     inset: 0;
@@ -693,34 +550,9 @@ textarea:focus {
     color: var(--dark-cocoa);
 }
 
-
-.login-submit {
-    background: var(--caramel-drizzle);
-    color: #fff;
-    padding: 11px;
-    width: 100%;
-    border: none;
-    border-radius: 999px;
-    margin-top: 15px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.22);
-    transition: background 0.2s ease, transform 0.16s ease, box-shadow 0.22s ease;
-}
-
-.login-submit:hover {
-    background: var(--brown-sugar);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.3);
-}
-
-
 .login-modal-overlay.active {
     display: flex;
 }
-
-
 
 @media (max-width: 900px) {
     .about-container,
@@ -774,4 +606,3 @@ textarea:focus {
         padding: 60px 0;
     }
 }
-
