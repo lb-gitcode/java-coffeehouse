@@ -53,3 +53,16 @@ console.log(products);
 // user input
 
 const cart = [];
+
+function findProduct(arr, code) {
+  return arr.find(item => item.id === code);
+}
+
+function calcPrice(arr) {
+  let totalPrice = 0;
+  arr.forEach(element => {
+    totalPrice += element.price;
+  });
+  let roundedPrice = Math.round(totalPrice * 100) / 100;
+  return roundedPrice;
+}
