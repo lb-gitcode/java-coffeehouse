@@ -312,6 +312,7 @@ p {
     box-shadow: 0 4px 14px rgba(0,0,0,0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
     border: 1px solid rgba(214, 164, 97, 0.08);
+    position: relative;
 }
 
 .product-card:hover {
@@ -340,6 +341,12 @@ p {
     color: var(--caramel-drizzle);
 }
 
+.product-actions {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 10px -18px 0;
+}
 
 .details-btn,
 .add-to-cart-btn,
