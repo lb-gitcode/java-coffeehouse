@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
 }
 
 :root {
@@ -787,6 +788,8 @@ textarea:focus {
 .login-modal-overlay.active {
     display: flex;
 }
+
+/* MEDIA QUERIES */
 
 @media (max-width: 900px) {
     .about-container,
