@@ -41,18 +41,46 @@ listen('click', loginSubmit, function() {
 // products initialization
 
 const espresso = new Product(0, 'Espresso', 3.50);
-const americano = new Product(1, 'Americano', 4)
+const americano = new Product(1, 'Americano', 4);
+const cappucino = new Product(2, 'Cappucino', 4.75);
 
 let products = [
   espresso,
-  americano
+  americano,
+  cappucino
 ];
 
 console.log(products);
 
 // user input
 
+// get elements
+
+const cartLog = getElement('cart-container');
+const cartItemCount = getElement('total-cart-items');
+const cartPrice = getElement('total-cart-cost');
+
+
 const cart = [];
+let totalItems = 0;
+let totalCost = 0;
+
+// functions
+
+function addProduct() {
+  let clicked = event.target;
+  if(clicked.classList.contains('add-to-cart-btn')) {
+    let foundID = Number(clicked.id);
+    let foundProduct = findProduct(products, foundID);
+    addToCart(foundProduct);
+    cartPrice.innerHTML = calcPrice(cart);
+  }
+}
+
+function addToCart(product) {
+  cart.push(product);
+  cartLog.innerHTML += `<div><p>${product.name}: $${product.price}</p></div>`;
+}
 
 function findProduct(arr, code) {
   return arr.find(item => item.id === code);
@@ -66,3 +94,5 @@ function calcPrice(arr) {
   let roundedPrice = Math.round(totalPrice * 100) / 100;
   return roundedPrice;
 }
+
+listen('click', document, addProduct);

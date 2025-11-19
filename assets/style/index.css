@@ -807,8 +807,7 @@ textarea:focus {
     background-color: var(--mocha-mist);
 }
 
-.cart-container {
-    display: flex;
+#cart-container {
     justify-content: center;
     background-color: var(--background-light);
     padding: 15px;
@@ -818,14 +817,25 @@ textarea:focus {
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.089);
     div p { 
+        text-align: center;
         font-family: "Nunito Sans";
         font-weight: 600; 
+        margin: 5px 0;
     }
+}
+
+.cart-details {
+    text-align: center;
+    margin-top: 5px;
+    .cart-detail-title { font-weight: 600; }
 }
 
 .proceed-container {
     margin-top: 30px;
     text-align: center;
+    div p {
+        font-size: 18px;
+    }
 }
 
 /* MEDIA QUERIES */
