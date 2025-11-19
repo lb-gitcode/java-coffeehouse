@@ -443,7 +443,7 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-/* edit here */
+
 .about-banner {
     position: relative;
     height: 220px;
@@ -482,7 +482,7 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
-/* edit here */
+
 .about-section {
     padding: 80px 0;
     background-color: var(--matcha-light);
