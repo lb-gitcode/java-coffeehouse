@@ -31,7 +31,7 @@
               <li><a href="#coffee-section">Menu</a></li>
               <li><a href="#about-section">About</a></li>
               <li><a href="#contact-section">Contact</a></li>
-              <li><button class="login-btn">Login</button></li>
+              <li><button class="login-btn" id="login-btn">Login</button></li>
             </ul>
           </nav>
         </div>
@@ -119,7 +119,14 @@
         <p class="price">$5.35</p>
         <a href="details.html" class="details-btn">View Details</a>
     </article>
+</div>
 
+    <div class="banner coffee-banner">
+    <div class="banner-overlay"></div>
+    <div>
+        <h2>Fresh Brew Daily</h2>
+        <p>Enjoy 10% off all pastries today only!</p>
+    </div>
 </div>
 
 </section>
@@ -212,7 +219,13 @@
         <p>Enjoy 10% off all pastries today only!</p>
     </div>
 
-</section>
+        <div class="banner discount-banner">
+            <div class="banner-overlay"></div>
+            <h2>Pastries Baked Fresh Every Morning</h2>
+            <p>Enjoy 10% off all pastries today only!</p>
+        </div>
+
+  </section>
 
     
     <section class="about-section" id="about-section">
@@ -237,21 +250,12 @@
             <div class="about-image">
                 <img src="./assets/media/about.02.jpg" alt="About Java Coffeehouse">
             </div>
-        </div>
+          </div>
     </section>
 
     
 
-<section class="discount-banner">
 
-    <div class="discount-overlay"></div>
-
-    <div class="discount-content">
-        <h2>Pastries Baked Fresh Every Morning</h2>
-        <p>Enjoy 10% off all pastries today only!</p>
-    </div>
-
-</section>
 
 
 
@@ -324,11 +328,10 @@
             </iframe>
           </div>
         </div>
-      </section>
 
-      <section class="footer-divider">
+        <div class="footer-divider">
         <h2>Visit Us for Fresh Coffee Daily</h2>
-      </section>
+    </section>
       
       <footer class="site-footer">
 
@@ -374,19 +377,11 @@
 </footer>
 
     
-<div class="login-modal-overlay" id="login-modal">
-    
+<div class="login-modal-overlay" id="login-modal"> 
     <div class="login-modal">
-
-        
         <button class="close-modal" id="close-login">&times;</button>
-
-        
         <h2>Login</h2>
-
         <form class="login-form">
-
-            
             <div class="form-group">
                 <label for="login-email">Email</label>
                 <input 
@@ -396,8 +391,6 @@
                     placeholder="you@example.com"
                     required>
             </div>
-
-            
             <div class="form-group">
                 <label for="login-password">Password</label>
                 <input 
@@ -407,15 +400,9 @@
                     placeholder="Enter your password"
                     required>
             </div>
-
-            
-            <button type="submit" class="login-submit">Login</button>
-
-        </form>
-
-    </div>
-
-</div>
-
-</body>
+            <button type="submit" class="login-submit" id="login-submit">Login</button>
+            </form>
+            </div>
+        </div>
+    </body>
 </html>
