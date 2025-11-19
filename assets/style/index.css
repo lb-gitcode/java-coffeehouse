@@ -720,6 +720,8 @@ textarea:focus {
     display: flex;
 }
 
+
+
 @media (max-width: 900px) {
     .about-container,
     .contact-wrapper {
