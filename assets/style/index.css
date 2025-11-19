@@ -340,11 +340,13 @@ h1, h2, h3 {
     margin: 8px 0 15px;
     color: var(--caramel-drizzle);
 }
-
-.details-btn {
+.details-btn,
+.add-to-cart-btn {
+    margin: 5px;
+    width: 140px;
     display: inline-block;
-    padding: 9px 20px;
-    background-color: var(--gold-rich);
+    padding: 10px 0px;
+    background-color: var(--gold-rich); /* same as details button */
     color: var(--text-dark);
     text-decoration: none;
     border-radius: 999px;
@@ -354,9 +356,12 @@ h1, h2, h3 {
     letter-spacing: 0.07em;
     transition: background 0.2s ease, transform 0.16s ease, box-shadow 0.2s ease;
     box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    border: none; /* if it’s a button element */
+    cursor: pointer;
 }
 
-.details-btn:hover {
+.details-btn:hover,
+.add-to-cart-btn:hover {
     background-color: var(--gold-soft);
     transform: translateY(-1px);
     box-shadow: 0 5px 16px rgba(0,0,0,0.18);
@@ -767,3 +772,4 @@ textarea:focus {
         padding: 60px 0;
     }
 }
+
