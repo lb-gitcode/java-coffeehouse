@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="School assignment">
-    <meta name="keywords" content="html, css, web, web development, javascript">
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style/index.css" media="all">
-    <script src="./assets/script/app.js" type="module" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="">
+        <meta name="description" content="School assignment">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <link rel="icon" href="" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="./assets/script/app.js" type="module" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+        <title>Home</title>
+    </head>
+    <body>
+        <header class = "site-header">
+            <div class = "header-container">
+            <a href="index.html" class="logo">
+                <img src="./assets/media/logo.jpg" alt="Java Coffeehouse Logo" class="logo-img">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#coffee-section">Menu</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><button class="login-btn" id="login-btn">Login</button></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
 
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-    <title>Home</title>
-  </head>
-  <body>
-    <header class = "site-header">
-        <div class = "header-container">
-          <a href="index.html" class="logo">
-            <img src="./assets/media/logo.jpg" alt="Java Coffeehouse Logo" class="logo-img">
-          </a>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#coffee-section">Menu</a></li>
-              <li><a href="#about-section">About</a></li>
-              <li><a href="#contact-section">Contact</a></li>
-              <li><button class="login-btn" id="login-btn">Login</button></li>
-            </ul>
-          </nav>
-        </div>
-    </header>
-
-    <section class="hero-section" id="hero">
-
-        <div class="hero-overlay"></div> 
-        <div class="hero-content">
-            <h1>Welcome to Java Coffeehouse</h1>
-            <p>Freshly brewed. Boldly flavored.</p>
-            <a href="#coffee-section" class="hero-btn">Explore Our Menu</a>
-        </div>
-
+        <!-- HERO -->
+        <section class="hero-section" id="hero">
+            <div class="hero-overlay"></div> 
+            <div class="hero-content">
+                <h1>Welcome to Java Coffeehouse</h1>
+                <p>Freshly brewed. Boldly flavored.</p>
+                <a href="#coffee-section" class="hero-btn">Explore Our Menu</a>
+            </div>
         </section>
 
+        <!-- COFFEE DETAILS SECTION -->
         <section class="products-section" id="coffee-section">
             <h2 class="section-title">Our Coffee Selection</h2>
             <div class="products-grid">
+
+                <!-- Espresso -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-espresso.jpg" alt="Espresso">
                     <h3>Espresso</h3>
@@ -58,7 +59,7 @@
                     <a href="details.html" class="details-btn">View Details</a>
                 </article>
 
-                
+                <!-- Americano -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-americano.jpg" alt="Americano">
                     <h3>Americano</h3>
@@ -66,7 +67,7 @@
                     <a href="details.html" class="details-btn">View Details</a>
                 </article>
 
-                
+                <!-- Cappuccino -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-cappuccino.jpg" alt="Cappuccino">
                     <h3>Cappuccino</h3>
@@ -74,7 +75,7 @@
                     <a href="details.html" class="details-btn">View Details</a>
                 </article>
 
-                
+                <!-- Matcha Latte -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-matcha.jpg" alt="Matcha Latte">
                     <h3>Matcha Latte</h3>
@@ -82,7 +83,7 @@
                     <a href="details.html" class="details-btn">View Details</a>
                 </article>
 
-                
+                <!-- Iced Coffee -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-iced.jpg" alt="Iced Coffee">
                     <h3>Iced Coffee</h3>
@@ -90,7 +91,7 @@
                     <a href="details.html" class="details-btn">View Details</a>
                 </article>
 
-                
+                <!-- Caramel Macchiato -->
                 <article class="product-card">
                     <img src="./assets/media/coffee-macchiato.jpg" alt="Caramel Macchiato">
                     <h3>Macchiato</h3>
@@ -185,12 +186,9 @@
                 <h2>Pastries Baked Fresh Every Morning</h2>
                 <p>Enjoy 10% off all pastries today only!</p>
             </div>
-            <div class="banner discount-banner">
-                <div class="banner-overlay"></div>
-                <h2>Pastries Baked Fresh Every Morning</h2>
-                <p>Enjoy 10% off all pastries today only!</p>
-            </div>
         </section>
+
+        <!-- ABOUT -->
         <section class="about-section" id="about-section">
             <div class="about-container">
                 <div class="about-text">
@@ -212,6 +210,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- CONTACT -->
         <section class="contact-section" id="contact-section">
             <h2 class="section-title">Contact Us</h2>
             <div class="contact-wrapper">
@@ -228,7 +228,7 @@
                                 id="name" 
                                 name="name" 
                                 placeholder="Your name"
-                                required>
+                            required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email Address</label>
@@ -237,7 +237,7 @@
                                 id="email" 
                                 name="email" 
                                 placeholder="you@example.com"
-                                required>
+                            required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
@@ -246,7 +246,7 @@
                                 id="subject" 
                                 name="subject"
                                 placeholder="How can we help?"
-                                required>
+                            required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -255,7 +255,7 @@
                                 name="message" 
                                 rows="5"
                                 placeholder="Write your message..."
-                                required></textarea>
+                            required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                     </form>
@@ -272,6 +272,8 @@
             <div class="footer-divider"></div>
             <h2>Visit Us for Fresh Coffee Daily</h2>
         </section>
+
+        <!-- FOOTER -->
         <footer class="site-footer">
             <div class="footer-container">
                 <div class="footer-column">
@@ -304,6 +306,8 @@
                 <p>&copy; 2025 Java Coffeehouse. All rights reserved.</p>
             </div>
         </footer>
+
+        <!-- POP-UP -->
         <div class="login-modal-overlay" id="login-modal"> 
             <div class="login-modal">
                 <button class="close-modal" id="close-login">&times;</button>
