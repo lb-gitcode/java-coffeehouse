@@ -1,6 +1,6 @@
 'use strict';
 
-import { getElement, listen } from "./utils.js";
+import { getElement, listen, Product } from "./utils.js";
 
 // pop-up
 
@@ -36,3 +36,20 @@ listen('click', loginSubmit, function() {
 	}
 });
 
+// cart
+
+// products initialization
+
+const espresso = new Product(0, 'Espresso', 3.50);
+const americano = new Product(1, 'Americano', 4)
+
+let products = [
+  espresso,
+  americano
+];
+
+console.log(products);
+
+// user input
+
+const cart = [];

@@ -9,3 +9,11 @@ export function select(selector, scope = document) { return scope.querySelector(
 export function selectAll(selector, scope = document) { return [...scope.querySelectorAll(selector)]; }
 // adding event listener
 export function listen(event, selector, callback) { return selector.addEventListener(event, callback); }
+
+export class Product {
+  constructor(id, name, price) {
+    this.id = id;
+    this.name = name;
+    this.price = price;
+  }
+}
