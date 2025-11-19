@@ -60,10 +60,10 @@ html {
 }
 
 body {
-    font-family: "Slabo 27px", serif;
-    line-height: 1.6;
-    background-color: var(--vanilla-foam);
+    font-family: "Nunito Sans", sans-serif;
+    background-color: var(--cream);
     color: var(--text-dark);
+    line-height: 1.6;
 }
 
 img {
@@ -105,23 +105,47 @@ h1, h2, h3 {
     }
 }
 
-.hero-content h1,
-.hero-content p,
+.hero-section {
+    height: 95vh;
+    background-image: url('../media/hero1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(2px);
+}
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+    padding: 0 20px;
+    color: var(--text-light);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+.hero-content h1 { font-size: 3.4rem; margin-bottom: 10px; }
+.hero-content p { font-size: 1.2rem; margin-bottom: 22px; }
 .hero-btn {
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards;
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--caramel);
+    border-radius: 999px;
+    color: var(--text-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: 0.25s;
 }
-
-.hero-content h1 {
-    animation-delay: 0.1s;
-}
-
-.hero-content p {
-    animation-delay: 0.25s;
-}
-
-.hero-btn {
-    animation-delay: 0.4s;
+.hero-btn:hover {
+    background: var(--gold);
+    transform: translateY(-1px);
 }
 
 
@@ -238,75 +262,7 @@ h1, h2, h3 {
     box-shadow: 0 5px 16px rgba(0,0,0,0.18);
 }
 
-.hero-section {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url('../media/hero1.jpg'); /* make sure this path matches your file */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(43, 26, 18, 0.25),
-        rgba(43, 26, 18, 0.65)
-    );
-}
-
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: var(--mocha-mist);
-    max-width: 720px;
-    padding: 0 20px;
-    margin-top: -40px;
-}
-
-.hero-content h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 12px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 22px;
-    color: #fdf5ea;
-}
-
-
-.hero-btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: var(--caramel-drizzle);
-    color: #fff;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-    transition: background 0.24s ease, transform 0.18s ease, box-shadow 0.24s ease;
-}
-
-.hero-btn:hover {
-    background-color: var(--brown-sugar);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
-}
 
 .products-section {
     padding: 80px 0;
@@ -732,7 +688,7 @@ textarea:focus {
 
 .footer-divider {
     height: 180px;
-    background-image: url('../media/pastryBanner.jpg'); /* or ANY image */
+    background-image: url('../media/pastryBanner.jpg'); 
     background-size: cover;
     background-position: center;
     border-radius: 10px;
@@ -742,19 +698,15 @@ textarea:focus {
     overflow: hidden;
 }
 
-/* Overlay */
+
 .footer-divider::before {
     content: "";
     position: absolute;
     inset: 0;
-    /* background: linear-gradient(
-        to right,
-        rgba(43, 26, 18, 0.78),
-        rgba(193, 122, 88, 0.65)
-    ); */
+    
 }
 
-/* Text */
+
 .footer-divider h2 {
     position: relative;
     z-index: 2;
