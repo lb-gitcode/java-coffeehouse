@@ -56,14 +56,14 @@ console.log(products);
 
 // get elements
 
-const cartLog = getElement('cart-container');
+const cartLog = getElement('cart-log');
 const cartItemCount = getElement('total-cart-items');
 const cartPrice = getElement('total-cart-cost');
 
 
 const cart = [];
 let totalItems = 0;
-let totalCost = 0;
+let cartHasItems = false;
 
 // functions
 
@@ -78,8 +78,14 @@ function addProduct() {
 }
 
 function addToCart(product) {
+  if (cartHasItems === false) {
+    cartLog.innerHTML = '';
+    cartHasItems = true;
+  }
   cart.push(product);
+  totalItems++;
   cartLog.innerHTML += `<div><p>${product.name}: $${product.price}</p></div>`;
+  cartItemCount.innerText = totalItems;
 }
 
 function findProduct(arr, code) {

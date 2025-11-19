@@ -807,12 +807,13 @@ textarea:focus {
     background-color: var(--mocha-mist);
 }
 
-#cart-container {
+.cart-container {
     justify-content: center;
     background-color: var(--background-light);
     padding: 15px;
     width: 60%;
     margin: auto;
+    margin-bottom: 20px;
     border: 1px solid var(--gold-soft);
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.089);
@@ -822,6 +823,11 @@ textarea:focus {
         font-weight: 600; 
         margin: 5px 0;
     }
+}
+
+#cart-log {
+    max-height: 500px;
+    overflow-y: scroll;
 }
 
 .cart-details {
