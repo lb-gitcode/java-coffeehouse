@@ -285,6 +285,10 @@ h1, h2, h3 {
     margin: 8px 0 15px;
     color: var(--caramel-drizzle);
 }
+.product-card p + .details-btn,
+.product-card p + .add-to-cart-btn {
+    margin-top: 25px;
+}
 
 .details-btn,
 .add-to-cart-btn,
@@ -304,6 +308,7 @@ h1, h2, h3 {
     border: none;
     transition: background 0.25s ease, transform 0.18s ease, box-shadow 0.25s ease;
     box-shadow: 0 4px 14px rgba(0,0,0,0.22);
+    margin: 18px;
 }
 
 .details-btn:hover,
