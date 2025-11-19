@@ -1,25 +1,433 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="description" content="School assignment">
-    <meta name="keywords" content="html, css, web, web development, javascript">
-    <link rel="icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style/index.css" media="all">
-    <script src="./assets/script/app.js" type="module" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Meddon&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
-    <title>Details</title>
-  </head>
-  <body>
-    <noscript>
-      <p>This page requires a JavaScript-enabled browser.</p>
-    </noscript>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <meta name="description" content="Product details">
+  <link rel="stylesheet" href="./assets/style/index.css" media="all">
+  <script src="./assets/script/app.js" type="module" defer></script>
+  <title>Product Details</title>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/media/logo.jpg" alt="Java Coffeehouse Logo" class="logo-img">
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#coffee-section">Menu</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><button class="login-btn">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div> 
+    <div class="hero-content">
+      <h1>Welcome to Java Coffeehouse</h1>
+      <p>Freshly brewed. Boldly flavored.</p>
+      <a href="#coffee-details" class="hero-btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- COFFEE DETAILS SECTION -->
+  <section class="products-section" id="coffee-section">
+    <h2 class="section-title">Coffee Details</h2>
+
+    <div class="products-grid">
+
+      <!-- Espresso -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-espresso.jpg" alt="Espresso">
+        <h3>Espresso</h3>
+        <p class="price">$3.50</p>
+        <p>Strong and bold espresso shot, made from ethically sourced beans. Perfect for a quick caffeine boost.</p>
+        <p><strong>Size options:</strong> Small (8oz), Medium (12oz), Large (16oz)</p>
+        <p><strong>Extras:</strong> Add milk, cream, sugar, or flavored syrups.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Americano -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-americano.jpg" alt="Americano">
+        <h3>Americano</h3>
+        <p class="price">$4.00</p>
+        <p>Smooth espresso diluted with hot water. Enjoy a classic taste with a rich aroma.</p>
+        <p><strong>Size options:</strong> Small, Medium, Large</p>
+        <p><strong>Extras:</strong> Vanilla or caramel syrup.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Cappuccino -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-cappuccino.jpg" alt="Cappuccino">
+        <h3>Cappuccino</h3>
+        <p class="price">$4.75</p>
+        <p>Rich espresso topped with steamed milk and a thick layer of foam. Classic Italian favorite.</p>
+        <p><strong>Size options:</strong> Small, Medium, Large</p>
+        <p><strong>Extras:</strong> Sprinkle of cocoa or cinnamon.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Matcha Latte -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-matcha.jpg" alt="Matcha Latte">
+        <h3>Matcha Latte</h3>
+        <p class="price">$5.25</p>
+        <p>Creamy steamed milk blended with premium Japanese matcha powder. Smooth and vibrant.</p>
+        <p><strong>Size options:</strong> Small, Medium, Large</p>
+        <p><strong>Extras:</strong> Honey or vanilla syrup.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Iced Coffee -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-iced.jpg" alt="Iced Coffee">
+        <h3>Iced Coffee</h3>
+        <p class="price">$4.50</p>
+        <p>Chilled espresso over ice, lightly sweetened, perfect for a hot day.</p>
+        <p><strong>Size options:</strong> Small, Medium, Large</p>
+        <p><strong>Extras:</strong> Milk or flavored syrups.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Macchiato -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-macchiato.jpg" alt="Macchiato">
+        <h3>Macchiato</h3>
+        <p class="price">$5.50</p>
+        <p>Espresso topped with a small amount of frothy milk. Bold and smooth.</p>
+        <p><strong>Size options:</strong> Small, Medium</p>
+        <p><strong>Extras:</strong> Caramel drizzle available.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Flat White -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-flatwhite.jpg" alt="Flat White">
+        <h3>Flat White</h3>
+        <p class="price">$4.90</p>
+        <p>Espresso with velvety microfoam, smooth and balanced flavor.</p>
+        <p><strong>Size options:</strong> Small, Medium</p>
+        <p><strong>Extras:</strong> Cocoa powder topping.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Mocha -->
+      <article class="product-card">
+        <img src="./assets/media/coffee-mocha.jpg" alt="Mocha">
+        <h3>Mocha</h3>
+        <p class="price">$5.35</p>
+        <p>Espresso blended with chocolate and steamed milk, topped with whipped cream.</p>
+        <p><strong>Size options:</strong> Small, Medium, Large</p>
+        <p><strong>Extras:</strong> Chocolate drizzle or syrup.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- PASTRY DETAILS SECTION -->
+  <section class="products-section" id="pastry-section">
+    <h2 class="section-title">Pastry Details</h2>
+
+    <div class="products-grid">
+
+      <!-- Lemon Loaf -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-lemon-loaf.jpg" alt="Lemon Loaf">
+        <h3>Lemon Loaf</h3>
+        <p class="price">$3.75</p>
+        <p>Soft and tangy lemon loaf, baked fresh daily with zesty lemon glaze.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Croissant -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-croissant.jpg" alt="Croissant">
+        <h3>Croissant</h3>
+        <p class="price">$3.25</p>
+        <p>Buttery, flaky croissant baked fresh every morning. Perfect for breakfast or snack.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Banana Bread -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-banana-bread.jpg" alt="Banana Bread">
+        <h3>Banana Bread</h3>
+        <p class="price">$3.50</p>
+        <p>Moist and flavorful banana bread made with ripe bananas and a touch of cinnamon.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Cinnamon Roll -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-cinnamon-roll.jpg" alt="Cinnamon Roll">
+        <h3>Cinnamon Roll</h3>
+        <p class="price">$4.25</p>
+        <p>Sweet and soft cinnamon roll with cream cheese frosting. A classic treat.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Macaron Box -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-macarons.jpg" alt="Macaron Box">
+        <h3>Macaron Box</h3>
+        <p class="price">$9.00</p>
+        <p>Assorted macarons with delicate flavors and colors. Perfect gift or treat.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Brownie -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-brownie.jpg" alt="Brownie">
+        <h3>Brownie</h3>
+        <p class="price">$3.75</p>
+        <p>Rich, chocolatey brownie with a fudgy center and slightly crisp edges.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Macaron Bits -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-macarons2.jpg" alt="Macaron Bits">
+        <h3>Macaron Bits</h3>
+        <p class="price">$2.75</p>
+        <p>Small pieces of assorted macarons for sampling or sharing.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+      <!-- Cheesecake Slice -->
+      <article class="product-card">
+        <img src="./assets/media/pastry-cheesecake.jpg" alt="Cheesecake Slice">
+        <h3>Cheesecake Slice</h3>
+        <p class="price">$4.95</p>
+        <p>Creamy cheesecake slice on a buttery graham cracker crust, topped with fresh fruit.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article> 
+
+    </div>
+  </section>
+
+  <section class="products-section" id="pastry-section">
+    <h2 class="section-title">Limited Addition</h2>
+
+    <div class="products-grid">
+
+      <!-- Oreo Shake -->
+      <article class="product-card">
+        <img src="./assets/media/oreoshake.png" alt="Oreo Shake">
+        <h3>Oreo Shake</h3>
+        <p class="price">$5.75</p>
+        <p>Sweet and love the shake.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+        <!--Chocolate Shake-->
+        <article class="product-card">
+        <img src="./assets/media/chocolate shake.png" alt="Drinks">
+        <h3>Chocolate Shake</h3>
+        <p class="price">$7.75</p>
+        <p>Sweet and love the shake.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+  <article class="product-card">
+        <img src="./assets/media/Brew Iced coffee.png" alt="Coffee">
+        <h3>Brewed Iced Coffee</h3>
+        <p class="price">$9.75</p>
+        <p>Sweet and love the shake.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+        <article class="product-card">
+        <img src="./assets/media/choco coffee.png" alt="Drinks">
+        <h3>Choco Iced Coffee</h3>
+        <p class="price">$3.75</p>
+        <p>Sweet and love the shake.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+  <section class="products-section" id="coffee-section">
+          <h2 class="section-title">Deals</h2>
+
+        <div class="products-grid">
+
+    
+    <article class="product-card">
+        <img src="./assets/media/combo.png" alt="combo">
+        <h3>Coffee combo</h3>
+        <p class="price">$7.50</p>
+        <p>Combo of coffee and pastry as you love</p>
+        <a href="index.html" class="details-btn">View Details</a>
+        <button class ="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+        <article class="product-card">
+        <img src="./assets/media/combo of shake.png" alt="combo">
+        <h3>Shake Combo</h3>
+        <p class="price">$7.50</p>
+        <p>Pick your favourite shake</p>
+        <a href="index.html" class="details-btn">View Details</a>
+        <button class ="add-to-cart-btn">Add to Cart</button>
+    </article>
+
+     <article class="product-card">
+        <img src="./assets/media/donut.png" alt="Donut">
+        <h3>Donuts</h3>
+        <p class="price">$9.75</p>
+        <p>Sweet and love the shake.</p>
+        <div class="product-actions">
+          <a href="index.html" class="details-btn">Back to Menu</a>
+          <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+      </article>
+        </div>
+  </section>
+
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-wrapper">
+      <div class="contact-form-container">
+        <p>Have a question, catering request, or special order? Send us a message and we will get back to you shortly.</p>
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.647896938953!2d-97.13845868452255!3d49.89507797940361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea71532fd2ca43%3A0x3dc32c0a91864551!2sWinnipeg%20MB!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+          loading="lazy"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Links</h3>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#coffee-section">Coffee</a></li>
+          <li><a href="#pastry-section">Pastries</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Visit Us</h3>
+        <p>Java Coffeehouse</p>
+        <p>123 Java Lane</p>
+        <p>Winnipeg, MB</p>
+        <p>Open Daily: 7 AM - 8 PM</p>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="footer-socials">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <p>&copy; 2025 Java Coffeehouse. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
