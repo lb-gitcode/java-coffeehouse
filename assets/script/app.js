@@ -72,7 +72,6 @@ let products = [
 	coffeeCombo, shakeCombo, donuts
 ];
 
-console.log(products);
 
 // user input
 
