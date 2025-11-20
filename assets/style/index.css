@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
 }
 
 :root {
@@ -26,10 +25,10 @@
 }
 
 .banner {
-    background-image: url(../media/heroBanner.jpg);
+    /* background-image: url(../media/heroBanner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
     height: 260px;
     width: min(95%, 1100px);
@@ -239,19 +238,6 @@ p {
 
 .main-nav a:hover::after {
     width: 100%;
-}
-
-.hero-section {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url('../media/pastryBanner.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .menu-banner {
