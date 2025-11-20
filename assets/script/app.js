@@ -12,11 +12,11 @@ const loginEmail = getElement('login-email');
 const loginPassword = getElement('login-password');
 
 function checkText(text) {
-  if(text === '') {
-    return false;
-  } else {
-    return true;
-  }
+	if(text === '') {
+		return false;
+	} else {
+		return true;
+	}
 }
 
 listen('click', loginButton, function() {
@@ -66,10 +66,10 @@ const shakeCombo = new Product(21, 'Shake Combo', 8.50);
 const donuts = new Product(22, 'Donuts', 9.75);
 
 let products = [ 
-  espresso, americano, cappucino, matcha, icedCoffee, macchiato, flatWhite, mocha,
-  lemonLoaf, croissant, bananaBread, cinnamonRoll, macaronBox, brownie, macaronBits, cheesecakeSlice,
-  oreoShake, chocoShake, brewIcedCoffee, chocoIcedCoffee,
-  coffeeCombo, shakeCombo, donuts
+	espresso, americano, cappucino, matcha, icedCoffee, macchiato, flatWhite, mocha,
+	lemonLoaf, croissant, bananaBread, cinnamonRoll, macaronBox, brownie, macaronBits, cheesecakeSlice,
+	oreoShake, chocoShake, brewIcedCoffee, chocoIcedCoffee,
+	coffeeCombo, shakeCombo, donuts
 ];
 
 console.log(products);
