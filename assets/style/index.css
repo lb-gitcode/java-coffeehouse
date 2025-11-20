@@ -113,7 +113,6 @@ p {
 
 .hero-section {
     height: 95vh;
-    background-image: url('../media/hero1.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -122,6 +121,16 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+.home-hero {
+    background-image: url('../media/hero1.jpg');
+}
+
+.details-hero {
+    background-image: url('../media/pastryBanner.jpg');
+}
+
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -240,14 +249,9 @@ p {
     width: 100%;
 }
 
-.menu-banner {
-    background-image: url('../media/menuBanner.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-.hero-overlay {
+
+/* .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
@@ -277,7 +281,7 @@ p {
     font-size: 1.2rem;
     margin-bottom: 22px;
     color: #fdf5ea;
-}
+} */
 
 .products-section {
     padding: 80px 0;
