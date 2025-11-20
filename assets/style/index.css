@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0.2s ease-in-out;
 }
 
 :root {
@@ -26,10 +25,10 @@
 }
 
 .banner {
-    background-image: url(../media/heroBanner.jpg);
+    /* background-image: url(../media/heroBanner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     position: relative;
     height: 260px;
     width: min(95%, 1100px);
@@ -114,7 +113,6 @@ p {
 
 .hero-section {
     height: 95vh;
-    background-image: url('../media/hero1.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -123,6 +121,16 @@ p {
     justify-content: center;
     text-align: center;
 }
+
+.home-hero {
+    background-image: url('../media/hero1.jpg');
+}
+
+.details-hero {
+    background-image: url('../media/pastryBanner.jpg');
+}
+
+
 .hero-overlay {
     position: absolute;
     inset: 0;
@@ -241,58 +249,6 @@ p {
     width: 100%;
 }
 
-.hero-section {
-    position: relative;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-image: url('../media/pastryBanner.jpg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.menu-banner {
-    background-image: url('../media/menuBanner.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(43, 26, 18, 0.25),
-        rgba(43, 26, 18, 0.65)
-    );
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    color: var(--mocha-mist);
-    max-width: 720px;
-    padding: 0 20px;
-    margin-top: -40px;
-}
-
-.hero-content h1 {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    margin-bottom: 12px;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 22px;
-    color: #fdf5ea;
-}
-
 .products-section {
     padding: 80px 0;
     background-color: var(--background-light);
@@ -360,6 +316,43 @@ p {
 }
 
 .product-details { margin-bottom: 50px; }
+
+.coffee-banner {
+    position: relative;
+    height: 220px;
+    background-image: url('../media/breww.jpg'); 
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    border-radius: 14px;
+    overflow: hidden;
+    width: min(95%, 1100px);
+}
+
+.coffee-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.coffee-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--text-light);
+    padding: 0 20px;
+}
+
+.coffee-content h2 {
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.coffee-content p {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 .details-btn,
 .add-to-cart-btn,
@@ -462,38 +455,9 @@ p {
 }
 
 
-.about-banner {
-    position: relative;
-    height: 220px;
-    background-image: url('../media/matcha.jpg'); 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 60px auto;
-    border-radius: 14px;
-    overflow: hidden;
-    width: min(95%, 1100px);
-}
 
-.about-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to right,
-        rgba(45, 23, 15, 0.8),
-        rgba(194, 160, 145, 0.5)
-    );
-}
 
-.about-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: var(--text-light);
-    padding: 0 20px;
-}
+
 
 .about-content p {
     font-size: 2rem;
@@ -582,6 +546,7 @@ p {
 }
 
 .contact-section {
+    text-align: center;
     padding: 80px 0;
     background-color: var(--hazelnut-cream);
 }
@@ -668,10 +633,13 @@ textarea:focus {
 
 .site-footer {
     background: var(--roasted-espresso);
+    text-align: center;
     color: var(--text-light);
     padding: 70px 0 40px;
     border-top: 4px solid var(--gold-soft);
 }
+
+footer { margin-bottom: -100px; }
 
 .footer-container {
     display: flex;
