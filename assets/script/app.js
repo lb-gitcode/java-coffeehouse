@@ -81,6 +81,7 @@ console.log(products);
 const cartLog = getElement('cart-log');
 const cartItemCount = getElement('total-cart-items');
 const cartPrice = getElement('total-cart-cost');
+const checkoutBtn = getElement('checkout-btn');
 
 
 const cart = [];
@@ -90,37 +91,50 @@ let cartHasItems = false;
 // functions
 
 function addProduct() {
-  let clicked = event.target;
-  if(clicked.classList.contains('add-to-cart-btn')) {
-    let foundID = Number(clicked.id);
-    let foundProduct = findProduct(products, foundID);
-    addToCart(foundProduct);
-    cartPrice.innerHTML = calcPrice(cart);
-  }
+	let clicked = event.target;
+	if(clicked.classList.contains('add-to-cart-btn')) {
+		let foundID = Number(clicked.id);
+		let foundProduct = findProduct(products, foundID);
+		addToCart(foundProduct);
+		cartPrice.innerHTML = calcPrice(cart);
+	}
 }
 
 function addToCart(product) {
-  if (cartHasItems === false) {
-    cartLog.innerHTML = '';
-    cartHasItems = true;
-  }
-  cart.push(product);
-  totalItems++;
-  cartLog.innerHTML += `<div><p>${product.name}: $${product.price}</p></div>`;
-  cartItemCount.innerText = totalItems;
+	if (cartHasItems === false) {
+		cartLog.innerHTML = '';
+		cartHasItems = true;
+	}
+	cart.push(product);
+	totalItems++;
+	cartLog.innerHTML += `<div><p>${product.name}: $${product.price}</p></div>`;
+	cartItemCount.innerText = totalItems;
 }
 
 function findProduct(arr, code) {
-  return arr.find(item => item.id === code);
+	return arr.find(item => item.id === code);
 }
 
 function calcPrice(arr) {
-  let totalPrice = 0;
-  arr.forEach(element => {
-    totalPrice += element.price;
-  });
-  let roundedPrice = Math.round(totalPrice * 100) / 100;
-  return roundedPrice;
+	let totalPrice = 0;
+	arr.forEach(element => {
+	totalPrice += element.price;
+	});
+	let roundedPrice = Math.round(totalPrice * 100) / 100;
+	return roundedPrice;
 }
 
 listen('click', document, addProduct);
+
+function resetCart() {
+	for (let i = 0; i < cart.length; i++) {
+		cart.pop(i);
+	}
+	totalItems = 0;
+	cartHasItems = false;
+	cartItemCount.innerText = totalItems;
+	cartPrice.innerHTML = '0';
+	cartLog.innerHTML = '<div><p>No items in cart.</p></div>';
+}
+
+listen('click', checkoutBtn, resetCart);
