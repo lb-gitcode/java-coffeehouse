@@ -738,6 +738,7 @@ footer { margin-bottom: -100px; }
 }
 
 .login-modal-overlay {
+    text-align: center;
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.6);
