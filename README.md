@@ -4,4 +4,4 @@ Languages used are JavaScript, HTML, and CSS.
 
 [Click here to see!](https://lb-gitcode.github.io/java-coffeehouse/)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/S2ClvOi"  ><a href="//imgur.com/a/S2ClvOi">JavaCoffeehouse</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![Screenshot of the Java Coffeehouse main page.](https://i.imgur.com/zmSVrGb.png)
